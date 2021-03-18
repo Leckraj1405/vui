@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Beginner Guide</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/e5387b3303.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <h1>HTML Beginner Guide</h1>
+      <!-- <p>always helping students</p> -->
+      <h3>
+        This always-on voice system helps students by providing HTML help, such
+        as HTML basics, codes format, elements, attributes, and so on.
+      </h3>
+      <h3>
+        Try saying 'What is HTML' and see the magic! or even try other HTML
+        related content such as 'attributes', 'elements'. Saying 'Open
+        documentation' shall redirect you to another website.
+      </h3>
+      <h3>
+        Note that this VUI automatically captures voice on starting. Please
+        allow microphone access and enable pop-ups.
+      </h3>
+      <div class="scrolling-box">
+        <div class="container" id="scrollbox">
+          <div class="texts" id="texts">
+            <!-- <p>Hello</p> -->
+          </div>
+        </div>
+      </div>
+
+      <button id="playBtn" onclick="playSpeech()">
+        <i class="fas fa-play-circle fa-2x" id="playIcon"></i>
+      </button>
+      <button id="muteBtn" onclick="mute()">
+        <i class="fas fa-volume-up fa-2x" id="muteIcon"></i>
+      </button>
+      <button id="stopBtn" onclick="stopSpeech()">
+        <i class="fas fa-stop-circle fa-2x" id="speechIcon"></i>
+      </button>
+      <button id="helpBtn" onclick="openHelp()">
+        <i class="fas fa-info-circle fa-2x" id="helpIcon"></i>
+      </button>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
